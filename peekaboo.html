@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {font-size: 200px; text-align: center;}
+    </style>
+</head>
+<body>
+    <p id="p">Hello</p>
+<script type="text/javascript">
+    let text = document.getElementById('p')
+    console.log('hello')
+    text.textContent = "🙈"
+    document.addEventListener("keypress", (e) => {
+        if(e.key == ' ') {
+            text.textContent = "🐵"
+        } 
+    })
+    document.addEventListener("keyup", (e) => {
+        if(e.key == ' ') {
+            text.textContent = "🙈"
+        } 
+    })
+
+</script>
+</body>
+</html>
